@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Design A Form</title>
+    <style>
+      h3{
+          text-align:left;
+          text-decoration: underline;
+          text-transform: uppercase;
+      }
+      label{
+          /* padding-right:25px; */
+          margin-right:50px;
+          color:blue;
+      }
+    </style>
+</head>
+<body>
+
+    <h3 >Student Attending Coding Class</h3>
+    <form action="">
+        <label for="" >Surname:</label>
+        <input type="text">
+        <br>
+        <label for="">Firstname:</label>
+        <input type="text">
+        <br>
+        <label for="">Age:</label>
+        <input type="number">
+        <br>
+        <label for="">Gender:</label>
+        <select name="" id="">
+            <option>Choose your Gender</option>
+            <option value="">Male</option>
+            <option value="">Female</option>
+        </select>
+        <br>
+        <label for="">Religion:</label>
+        <select name="" id="">
+            <option>Choose your religion</option>
+            <option>Christian</option>
+            <option>Muslim</option>
+            <option>Traditional Worshipper</option>
+
+        </select>
+        <br>
+        <label for="">Describe The Class:</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <button>Submit</button>
+    </form>
+    <br>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>S/N</th>
+                <th>Items on my table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Laptop Bag</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bottle Water</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Laptop </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>WhiteBoard Marker</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h4>Addition</h4>
+    <form action="">
+            <input type="text" name="add_one" id="add_one">
+             + 
+            <input type="text" name="add_two" id="add_two"> = 
+            <div id="answer"></div>
+            <br>
+            <button id="submit" onclick="cal()">Enter Result</button>
+    </form>
+
+    <script type="text/javascript">
+        const cal=()=>{
+            let AddOne = document.getElementById("add_one").value;
+            let AddTwo = document.getElementById("add_two").value;
+            let result = parseInt(AddOne) + parseInt(AddTwo);
+            // alert(result);
+            let answer = document.getElementById('answer').innerHTML = result;
+            alert(answer);
+        }
+    </script>
+   
+    
+</body>
+
+</html>
