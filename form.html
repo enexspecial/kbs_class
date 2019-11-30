@@ -86,7 +86,7 @@
             <input type="text" name="add_one" id="add_one">
              + 
             <input type="text" name="add_two" id="add_two"> = 
-            <div id="answer"></div>
+            
             <br>
             <button id="submit" onclick="cal()">Enter Result</button>
     </form>
@@ -96,9 +96,8 @@
             let AddOne = document.getElementById("add_one").value;
             let AddTwo = document.getElementById("add_two").value;
             let result = parseInt(AddOne) + parseInt(AddTwo);
-            // alert(result);
-            let answer = document.getElementById('answer').innerHTML = result;
-            alert(answer);
+            document.body.innerHTML = "<div style='background-color:red; font-size:30px;'>"+ result +"</div>";
+            
         }
     </script>
    
