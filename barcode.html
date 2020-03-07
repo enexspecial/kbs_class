@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <svg class="barcode"></svg>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.0/JsBarcode.all.js"></script>
+
+    <script>
+        alert("working");
+        $(".barcode").JsBarcode("9780199532179", {
+            format: "EAN",
+            displayValue: true,
+            fontSize: 20
+        });
+    </script>
+
+
+</body>
+
+</html>

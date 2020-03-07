@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Class</title>
+    <script>
+        // window.alert("Paul is in the Class");
+        console.log('Yawning');
+    </script>
+</head>
+
+<body>
+    <button id="testButton">TestButton</button>
+    <div id="test-hide">
+        <div>
+            Hide Me Please !!!!!
+        </div>
+    </div>
+
+</body>
+
+<script>
+    // document.write(3 + 6);
+    let button = document.getElementById('testButton'); //
+    button.addEventListener('click', () => {
+        let testHide = document.getElementById('test-hide');
+        testHide.style.display = 'none';
+        // setInterval()
+        mueez();
+
+    });
+
+    const Mueez = () => {
+        console.log("I am trying to sleep in the class");
+    }
+</script>
+
+</html>

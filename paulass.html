@@ -1,0 +1,145 @@
+<!doctype HTML>
+<html lang="en">
+
+<head>
+    <title>Assignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16pt;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 100%;
+            height: auto;
+        }
+        
+        .row {
+            display: flex;
+        }
+        
+        #topic {
+            text-align: center;
+            text-transform: capitalize;
+            text-decoration: underline rgb(104, 99, 109);
+        }
+        
+        .form-container {
+            width: 50%;
+            margin-left: 50px;
+            margin-top: 50px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .form-container h3 {
+            text-decoration: underline brown;
+        }
+        
+        .form-container form {
+            width: 500px;
+            padding-top: 10px;
+        }
+        
+        .form-group {
+            display: block;
+            width: 200px;
+        }
+        
+        label {
+            font-size: 14pt;
+            text-shadow: 1px 1px 2px chocolate;
+        }
+        
+        input {
+            border-top: none;
+            border-left: 8px solid black;
+            border-right: none;
+            border-bottom: none;
+        }
+        
+        input::placeholder {
+            font-size: 10pt;
+        }
+        
+        button {
+            font-size: 14pt;
+            background-color: green;
+        }
+        
+        .table-container {
+            position: absolute;
+            width: 50%;
+            left: 50px;
+        }
+        
+        .table-container table {
+            padding: 10px;
+        }
+    </style>
+
+    <body>
+        <h2 id="topic">Record of student in my class</h2>
+        <div class="container">
+            <div class="form-container row">
+                <h3>Add Student to classs</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="Firstname">Student Firstname</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Enter Student Firstname">
+                    </div>
+                    <div class="form-group">
+                        <label for="Lastname">Student Lastname</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Enter Student Lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="Firstname">Student year of birth</label>
+                        <input type="date" name="birth" id="birth" placeholder="Enter Student Birth Year">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="table-container row">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Age</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Bola</td>
+                            <td>Jones</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>Bimbo</td>
+                            <td>Joke</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>Ashake</td>
+                            <td>Funmi</td>
+                            <td>12</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+    </body>
+</head>
+
+</html>

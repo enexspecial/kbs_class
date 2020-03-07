@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Data</title>
+    <link rel="stylesheet" href="classwork.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <body>
+        <!-- Build an interface the shows that add patients data  -->
+
+        <head>
+            <nav class="navbar">
+                <div class="nav-logo">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">IT Hospital</a>
+                </div>
+                <!-- <span><i class="fas fa-house-damage"></i></span> -->
+            </nav>
+
+        </head>
+        <div class="pull-right">
+            <button class="btn btn-info " id="toggle" onclick="toggleForm()">Toggle Form</button>
+        </div>
+        <div class="container">
+            <section id="form-section" class="hide">
+                <div class="form-container">
+                    <h3>Enter Patient Record</h3>
+                    <div class="form-body">
+                        <form action="" id="hospital">
+                            <div>
+                                <label for="firstname">Firstname:</label>
+                                <input type="text" name="firstname" id="firstname">
+                            </div>
+                            <div>
+                                <label for="Lastname">Lastname:</label>
+                                <input type="text" name="lastname" id="lastname">
+                            </div>
+                            <div>
+                                <label for="Lastname">Phone &nbsp;&nbsp;&nbsp;&nbsp; :</label>
+                                <input type="text" name="phone" id="phone">
+                            </div>
+                            <div>
+                                <label for="Lastname">Complains:</label>
+                                <textarea name="complains" id="complains" cols="30" rows="10"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" id="submit">Submit</button>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <section>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Phone Number</th>
+                            <th>Complain</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <script type="text/javascript" src="classwork.js"></script>
+    </body>
+
+</html>
